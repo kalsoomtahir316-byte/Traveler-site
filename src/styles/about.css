@@ -1,0 +1,109 @@
+.about-wrap {
+  min-height: calc(100vh - 120px);
+  padding: 48px 16px;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section {
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.10);
+  padding: 28px;
+  margin-bottom: 18px;
+}
+
+.hero {
+  display: grid;
+  gap: 18px;
+}
+@media (min-width: 900px) {
+  .hero {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+  }
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.hero p {
+  color: #546e7a;
+  font-size: 18px;
+}
+
+.hero-media {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 260px;
+  background: #cfd8dc;
+}
+.hero-media img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.stats {
+  display: grid; gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 720px) {
+  .stats { grid-template-columns: repeat(4, 1fr); }
+}
+.stat {
+  text-align: center;
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.stat .num { font-size: 26px; font-weight: 800; color: #1565c0; }
+.stat .label { color: #607d8b; }
+
+.values h2,
+.team h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+.values-grid {
+  display: grid; gap: 12px;
+}
+@media (min-width: 820px) {
+  .values-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.value {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.value h3 { margin: 0 0 6px; }
+.value p { color: #546e7a; }
+
+.team-grid {
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 720px) {
+  .team-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.member {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+.member img {
+  width: 100%; height: 150px; object-fit: cover;
+}
+.member .meta {
+  padding: 12px;
+}
+.member .name { font-weight: 700; }
+.member .role { color: #607d8b; font-size: 14px; }
