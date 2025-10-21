@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar.jsx";
 import Home from "./Pages/Home";
 import Landing from "./Pages/Landing";
 import Tours from "./Pages/Tours";
@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <div className="app">  
-      <Navbar />
+      <NavBar />
 
       <main className="main">  
         <div style={{ padding: "20px 40px", maxWidth: "1200px", margin: "0 auto" }}>
